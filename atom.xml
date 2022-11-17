@@ -1,0 +1,912 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://sjh0020.netlify.app</id>
+    <title>sjh_blog</title>
+    <updated>2022-11-17T00:29:34.043Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://sjh0020.netlify.app"/>
+    <link rel="self" href="https://sjh0020.netlify.app/atom.xml"/>
+    <subtitle>一切行动源于兴趣~</subtitle>
+    <logo>https://sjh0020.netlify.app/images/avatar.png</logo>
+    <icon>https://sjh0020.netlify.app/favicon.ico</icon>
+    <rights>All rights reserved 2022, sjh_blog</rights>
+    <entry>
+        <title type="html"><![CDATA[笔记本触摸板使用技巧]]></title>
+        <id>https://sjh0020.netlify.app/post/bi-ji-ben-hong-mo-ban-shi-yong-ji-qiao/</id>
+        <link href="https://sjh0020.netlify.app/post/bi-ji-ben-hong-mo-ban-shi-yong-ji-qiao/">
+        </link>
+        <updated>2022-05-12T00:02:26.000Z</updated>
+        <content type="html"><![CDATA[<p>一、一只手指轻敲一次为鼠标左键单击，敲两次为鼠标左键双击<br>
+二、一只手指快熟轻敲两次不放手并移动为长按鼠标左键，可以拖动图标，选中多个文件<br>
+三、两只手指轻敲一次为鼠标右键单击<br>
+四、两只手指向上轻扫为鼠标滚轮向下，向下轻扫为鼠标滚轮向上<br>
+五、两只手指缩放可以缩放视图(如放大缩小图片、调整浏览器页面缩放比例)<br>
+六、三只手指向上轻扫呼出任务视图，向下轻扫所有窗口最小化<br>
+七、三只手指轻敲呼出搜索<br>
+八、三只手指向左(右)划可以切换窗口，等同于<code>Alt+Tab</code></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[通过Netlify免费加速GitHub Pages]]></title>
+        <id>https://sjh0020.netlify.app/post/netlify-github-pages/</id>
+        <link href="https://sjh0020.netlify.app/post/netlify-github-pages/">
+        </link>
+        <updated>2021-10-10T14:21:37.000Z</updated>
+        <content type="html"><![CDATA[<p>为什么突然想加速Github Pages呢，是因为突然发现校园网把所有带github的域名全部给屏蔽掉了，所以我只好另外找网站代理我的Github Pages，继续我的白嫖之路</p>
+<h2 id="注册netlify">注册Netlify</h2>
+<p><a href="https://www.netlify.com/">Netlify官网</a>，点击右上角<a href="https://app.netlify.com/">Sign up</a>，这里需要点魔法上网<br>
+<img src="https://cdn.jsdelivr.net/gh/sjh0020/picture@master/20211010/netlify-homepage.wk16xpcibu8.png" alt="netlify-homepage" loading="lazy"><br>
+<img src="https://cdn.jsdelivr.net/gh/sjh0020/picture@master/20211010/sign-up.1b237pg8wr4w.png" alt="sign-up" loading="lazy"></p>
+<p>这里我直接关联Github账号进行注册，认证后填写一些个人信息描述，这里随意就行，全部填完后点击<code>Set up and continue</code>完成注册<br>
+<img src="https://cdn.jsdelivr.net/gh/sjh0020/picture@master/20211010/set-up.2gtxhau5dm00.png" alt="set-up" loading="lazy"></p>
+<h2 id="在netlify托管github-pages">在Netlify托管Github Pages</h2>
+<p>在主页找到<a href="https://app.netlify.com/start">New site from Git</a><br>
+<img src="https://cdn.jsdelivr.net/gh/sjh0020/picture@master/20211010/new-site-from-git.1zogn2jlvbs0.png" alt="new-site-from-git" loading="lazy"></p>
+<p>选择网站源码托管的代码仓库类型，支持Github、Gitlab以及Bitbucket，这里选择<code>GitHub</code><br>
+<img src="https://cdn.jsdelivr.net/gh/sjh0020/picture@master/20211010/creat-a-new-site.58kinu5vj4o0.png" alt="creat-a-new-site" loading="lazy"></p>
+<p>进入Github的认证授权页面，点击<code>Authorize Netlify by Netlify</code><br>
+<img src="https://cdn.jsdelivr.net/gh/sjh0020/picture@master/20211010/Authorize-Netlify-by-Netlify.5fww6xvp8lo0.png" alt="Authorize-Netlify-by-Netlify" loading="lazy"></p>
+<p>点击<code>Only select repositories</code>选择要授权的Github仓库，当然也可以直接选择授权所有仓库，这个授权在设置中可以改<br>
+<img src="https://cdn.jsdelivr.net/gh/sjh0020/picture@master/20211010/select-repositories.65qzgutcfv80.png" alt="select-repositories" loading="lazy"></p>
+<p>授权完成回到Netlify后台页面，选择我们刚刚授权的Github仓库继续<br>
+<img src="https://cdn.jsdelivr.net/gh/sjh0020/picture@master/20211010/select-github-repositories.33hlt5gspzo0.png" alt="select-github-repositories" loading="lazy"></p>
+<p>选择部署的用户以及分支，如果是一些需要编译的项目，还支持定义编译的命令以及最终发布的目录，纯静态网站的话都不需要填写，直接点击<code>Deploy site</code>即可完成部署<br>
+<img src="https://cdn.jsdelivr.net/gh/sjh0020/picture@master/20211010/site-setting.1wrefw7pn5mo.png" alt="site-setting" loading="lazy"></p>
+<h2 id="自定义netlify二级域名">自定义Netlify二级域名</h2>
+<p>部署完成后，Netlify会自动生成一个随机的二级域名<code>xxx.netlify.com</code>，我们可以修改为自定义的二级域名，点击<code>Site Settings</code><br>
+<img src="https://cdn.jsdelivr.net/gh/sjh0020/picture@master/20211010/%E7%AB%99%E7%82%B9%E8%AE%BE%E7%BD%AE.1egktqk30zeo.png" alt="站点设置" loading="lazy"></p>
+<p>点击<code>Change site name</code>变更名字<br>
+<img src="https://cdn.jsdelivr.net/gh/sjh0020/picture@master/20211010/change-site-name.1asqgth6nmhs.png" alt="change-site-name" loading="lazy"><br>
+<img src="https://cdn.jsdelivr.net/gh/sjh0020/picture@master/20211010/%E5%8F%98%E6%9B%B4%E5%9F%9F%E5%90%8D.2673o5eyn0o0.png" alt="变更域名" loading="lazy"><br>
+这样对我来说就大功告成了，通过sjh0020.netlify.app即可访问<br>
+要绑定自己域名参考下面链接</p>
+<h2 id="绑定自己域名">绑定自己域名</h2>
+<p><a href="https://www.cnblogs.com/37Y37/p/12551839.html">参考文章</a></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[GAL目录索引]]></title>
+        <id>https://sjh0020.netlify.app/post/gal-mu-lu-suo-yin/</id>
+        <link href="https://sjh0020.netlify.app/post/gal-mu-lu-suo-yin/">
+        </link>
+        <updated>2021-09-23T01:29:57.000Z</updated>
+        <content type="html"><![CDATA[<p>本目录为资源归纳索引，地址只能引导到文件夹，具体下载游戏请逐个点开压缩包下载游戏，根据索引慢慢中找想要的游戏吧。<br>
+本资源为个人兴趣收集，转存。基本为汉硬版，其他会经行特殊标注。感谢主要资源来源<a href="https://kkgal.com">忧郁的弟弟(LOLI)君</a>及进行资源转存分享的<a href="https://unkiller.xyz/1/galgame/%E5%BF%A7%E9%83%81%E7%9A%84%E5%BC%9F%E5%BC%9F%E5%90%88%E9%9B%86">unkiller</a>！！！<br>
+apk版在对应文件页注释了安装方法，psp版则直接运行ppsspp模拟器即可<br>
+<a href="https://sjh0020.github.io/onedrive2">我的网盘地址</a><br>
+<a href="https://pan.sjh0020.workers.dev">备用地址</a><br>
+本目录按首字母排序(大概吧)，请善用页面搜索<code>CTRL + F</code>搜索关键字<br>
+解压密码：大部分没有，常用忧郁的弟弟，具体见压缩包内注释<br>
+请使用WINRAR等软件解压，本资源大部分重新打包并添加10%恢复记录</p>
+<h2 id="a">A</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">游戏名</th>
+<th style="text-align:center">路径</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">爱欲姐妹洛丽塔</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/LOLI/%E7%88%B1%E6%AC%B2%E5%A7%90%E5%A6%B9%E6%B4%9B%E4%B8%BD%E5%A1%94">/game/LOLI/爱欲姐妹洛丽塔</a></td>
+</tr>
+<tr>
+<td style="text-align:center">Air</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/KEY">/game/KEY/Air.rar</a></td>
+</tr>
+<tr>
+<td style="text-align:center">Angel Beats! -1st beat</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/Angel%20Beats!">/game/Angel Beats!</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="b">B</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">游戏名</th>
+<th style="text-align:center">路径</th>
+</tr>
+</thead>
+</table>
+<h2 id="c">C</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">游戏名</th>
+<th style="text-align:center">路径</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Cafe Little Wish</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/Cafe%20Little%20Wish">/game/Cafe Little Wish</a></td>
+</tr>
+<tr>
+<td style="text-align:center">CLANNAD</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/KEY/CLANNAD">/game/KEY/CLANNAD</a></td>
+</tr>
+<tr>
+<td style="text-align:center">雏酱的秘密(麻衣的诱惑前作)</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/LOLI/%E9%9B%8F%E9%85%B1%E7%9A%84%E7%A7%98%E5%AF%86">/game/LOLI/雏酱的秘密</a></td>
+</tr>
+<tr>
+<td style="text-align:center">春天的足音</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/minori/%E6%98%A5%E5%A4%A9%E7%9A%84%E8%B6%B3%E9%9F%B3">/game/minori/春天的足音</a></td>
+</tr>
+<tr>
+<td style="text-align:center">CROSS+CHANNEL複刻版</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/CROSS+CHANNEL%E8%A4%87%E5%88%BB%E7%89%88">/game/CROSS+CHANNEL複刻版</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="d">D</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">游戏名</th>
+<th style="text-align:center">路径</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Durarara!!无头骑士异闻录(PSP)</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/PSP%20ISO/%E6%97%A0%E5%A4%B4%E9%AA%91%E5%A3%AB%E5%BC%82%E9%97%BB%E5%BD%95Durarara!!">/game/PSP ISO/无头骑士异闻录Durarara!!</a></td>
+</tr>
+<tr>
+<td style="text-align:center">誰が殺したコマドリを(是谁杀死了知更鸟)</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/%E6%98%AF%E8%B0%81%E6%9D%80%E6%AD%BB%E4%BA%86%E7%9F%A5%E6%9B%B4%E9%B8%9F">/game/是谁杀死了知更鸟</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="e">E</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">游戏名</th>
+<th style="text-align:center">路径</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">ef - the first tale</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/minori/ef%20-%20the%20first%20tale">/game/minori/ef - the first tale</a></td>
+</tr>
+<tr>
+<td style="text-align:center">ef - the latter tale</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/minori/ef%20-%20the%20latter%20tale">/game/minori/ef - the latter tale</a></td>
+</tr>
+<tr>
+<td style="text-align:center">Eden</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/minori/eden">/game/minori/eden</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="f">F</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">游戏名</th>
+<th style="text-align:center">路径</th>
+</tr>
+</thead>
+</table>
+<h2 id="g">G</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">游戏名</th>
+<th style="text-align:center">路径</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">哥哥，早上起床之前都要抱紧我哦！</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/%E5%93%A5%E5%93%A5%EF%BC%8C%E6%97%A9%E4%B8%8A%E8%B5%B7%E5%BA%8A%E4%B9%8B%E5%89%8D%E9%83%BD%E8%A6%81%E6%8A%B1%E7%B4%A7%E6%88%91%E5%93%A6%EF%BC%81/%E5%93%A5%E5%93%A5%EF%BC%8C%E6%97%A9%E4%B8%8A%E8%B5%B7%E5%BA%8A%E4%B9%8B%E5%89%8D%E9%83%BD%E8%A6%81%E6%8A%B1%E7%B4%A7%E6%88%91%E5%93%A6%EF%BC%81">/game/哥哥，早上起床之前都要抱紧我哦！/哥哥，早上起床之前都要抱紧我哦！</a></td>
+</tr>
+<tr>
+<td style="text-align:center">哥哥，早上起床之前都要抱紧我哦！晚上睡觉之前做更多色色的事吧！</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/%E5%93%A5%E5%93%A5%EF%BC%8C%E6%97%A9%E4%B8%8A%E8%B5%B7%E5%BA%8A%E4%B9%8B%E5%89%8D%E9%83%BD%E8%A6%81%E6%8A%B1%E7%B4%A7%E6%88%91%E5%93%A6%EF%BC%81/%E5%93%A5%E5%93%A5%EF%BC%8C%E6%97%A9%E4%B8%8A%E8%B5%B7%E5%BA%8A%E4%B9%8B%E5%89%8D%E9%83%BD%E8%A6%81%E6%8A%B1%E7%B4%A7%E6%88%91%E5%93%A6%EF%BC%81%E6%99%9A%E4%B8%8A%E7%9D%A1%E8%A7%89%E4%B9%8B%E5%89%8D%E5%81%9A%E6%9B%B4%E5%A4%9A%E8%89%B2%E8%89%B2%E7%9A%84%E4%BA%8B%E5%90%A7%EF%BC%81">/game/哥哥，早上起床之前都要抱紧我哦！/哥哥，早上起床之前都要抱紧我哦！晚上睡觉之前做更多色色的事吧！</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="h">H</h2>
+<p>海猫鸣泣之时部分包含萌化版，全语音版、寒蝉鸣泣之时萌化版为单独压缩包</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">游戏名</th>
+<th style="text-align:center">路径</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">海猫鸣泣之时</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/07th%20Expansion(%E9%BE%99%E9%AA%91%E5%A3%AB)/%E6%B5%B7%E7%8C%AB%E9%B8%A3%E6%B3%A3%E4%B9%8B%E6%97%B6">/game/07th Expansion(龙骑士)/海猫鸣泣之时</a></td>
+</tr>
+<tr>
+<td style="text-align:center">寒蝉鸣泣之时</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/07th%20Expansion(%E9%BE%99%E9%AA%91%E5%A3%AB)/%E5%AF%92%E8%9D%89%E9%B8%A3%E6%B3%A3%E4%B9%8B%E6%97%B6">/game/07th Expansion(龙骑士)/寒蝉鸣泣之时</a></td>
+</tr>
+<tr>
+<td style="text-align:center">花吻在上(亲吻那片花瓣) 1-19</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/%E8%8A%B1%E5%90%BB%E5%9C%A8%E4%B8%8A">/game/花吻在上</a></td>
+</tr>
+<tr>
+<td style="text-align:center">灰色的乐园</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/frontwing/%E7%81%B0%E8%89%B2%E7%9A%84%E4%B9%90%E5%9B%AD">/game/frontwing/灰色的乐园</a></td>
+</tr>
+<tr>
+<td style="text-align:center">H2O～FOOTPRINTS IN THE SAND～</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/H2O">/game/H2O</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="i">I</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">游戏名</th>
+<th style="text-align:center">路径</th>
+</tr>
+</thead>
+</table>
+<h2 id="j">J</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">游戏名</th>
+<th style="text-align:center">路径</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">近月少女的礼仪</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/Navel/%E8%BF%91%E6%9C%88%E5%B0%91%E5%A5%B3%E7%9A%84%E7%A4%BC%E4%BB%AA">/game/Navel/近月少女的礼仪</a></td>
+</tr>
+<tr>
+<td style="text-align:center">近月少女的礼仪2</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/Navel/%E8%BF%91%E6%9C%88%E5%B0%91%E5%A5%B3%E7%9A%84%E7%A4%BC%E4%BB%AA2">/game/Navel/近月少女的礼仪2</a></td>
+</tr>
+<tr>
+<td style="text-align:center">君与彼女与彼女之恋</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/%E5%90%9B%E4%B8%8E%E5%BD%BC%E5%A5%B3%E4%B8%8E%E5%BD%BC%E5%A5%B3%E4%B9%8B%E6%81%8B">/game/君与彼女与彼女之恋</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="k">K</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">游戏名</th>
+<th style="text-align:center">路径</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Kanon</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/KEY">/game/KEY</a></td>
+</tr>
+<tr>
+<td style="text-align:center">壳之少女</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/%E5%A3%B3%E4%B9%8B%E5%B0%91%E5%A5%B3">/game/壳之少女</a></td>
+</tr>
+<tr>
+<td style="text-align:center">库特wafter</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/KEY/%E5%BA%93%E7%89%B9wafter">/game/KEY/库特wafter</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="l">L</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">游戏名</th>
+<th style="text-align:center">路径</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Little Busters! EX</td>
+<td style="text-align:center">[/game/KEY/Little Busters! EX](https://pan.sjh0020.workers.dev/?path=/game/KEY/Little Busters! EX)</td>
+</tr>
+<tr>
+<td style="text-align:center">萝莉的时间</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/LOLI/LOLI%E7%9A%84%E6%97%B6%E9%97%B4">/game/LOLI/LOLI的时间</a></td>
+</tr>
+<tr>
+<td style="text-align:center">lovees(ラブesエム)</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/lovees">/game/lovees</a></td>
+</tr>
+<tr>
+<td style="text-align:center">萝球社!秘密的失物</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/PSP%20ISO/%E8%90%9D%E7%90%83%E7%A4%BEpsp">/game/PSP ISO/萝球社psp</a></td>
+</tr>
+<tr>
+<td style="text-align:center">萝球社!HappyValentDay</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/PSP%20ISO/%E8%90%9D%E7%90%83%E7%A4%BEpsp">/game/PSP ISO/萝球社psp</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="m">M</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">游戏名</th>
+<th style="text-align:center">路径</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">ももいろ性癖開放宣言</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/%E3%82%82%E3%82%82%E3%81%84%E3%82%8D%E6%80%A7%E7%99%96%E9%96%8B%E6%94%BE%E5%AE%A3%E8%A8%80">/game/ももいろ性癖開放宣言</a></td>
+</tr>
+<tr>
+<td style="text-align:center">麻衣的诱惑(前作: 雏酱的秘密)</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/LOLI/%E9%BA%BB%E8%A1%A3%E7%9A%84%E8%AF%B1%E6%83%91">/game/LOLI/麻衣的诱惑</a></td>
+</tr>
+<tr>
+<td style="text-align:center">美好的每一天～不连续存在～(素晴日)</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/%E7%B4%A0%E6%99%B4%E6%97%A5">/game/素晴日</a></td>
+</tr>
+<tr>
+<td style="text-align:center">妹的圣域</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/%E5%A6%B9%E7%9A%84%E5%9C%A3%E5%9F%9F">/game/妹的圣域</a></td>
+</tr>
+<tr>
+<td style="text-align:center">妹嫁 ～妹妹新娘～/妹嫁 ～まいよめ～</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/%E5%A6%B9%E5%AB%81">/game/妹嫁</a></td>
+</tr>
+<tr>
+<td style="text-align:center">妹调教日记</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/%E5%A6%B9%E8%B0%83%E6%95%99%E6%97%A5%E8%AE%B0">/game/妹调教日记</a></td>
+</tr>
+<tr>
+<td style="text-align:center">妹调教日记 happy end &amp; another</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/%E5%A6%B9%E8%B0%83%E6%95%99%E6%97%A5%E8%AE%B0">/game/妹调教日记</a></td>
+</tr>
+<tr>
+<td style="text-align:center">梦见之药</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/%E6%A2%A6%E8%A7%81%E4%B9%8B%E8%8D%AF">/game/梦见之药</a></td>
+</tr>
+<tr>
+<td style="text-align:center">秘密基地里的羞羞事</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/LOLI/%E7%A7%98%E5%AF%86%E5%9F%BA%E5%9C%B0%E9%87%8C%E7%9A%84%E7%BE%9E%E7%BE%9E%E4%BA%8B">/game/LOLI/秘密基地里的羞羞事</a></td>
+</tr>
+<tr>
+<td style="text-align:center">迷途的二人与世界的全部</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/%E8%BF%B7%E9%80%94%E7%9A%84%E4%BA%8C%E4%BA%BA%E4%B8%8E%E4%B8%96%E7%95%8C%E7%9A%84%E5%85%A8%E9%83%A8/%E8%BF%B7%E9%80%94%E7%9A%84%E4%BA%8C%E4%BA%BA%E4%B8%8E%E4%B8%96%E7%95%8C%E7%9A%84%E5%85%A8%E9%83%A8">/game/迷途的二人与世界的全部/迷途的二人与世界的全部</a></td>
+</tr>
+<tr>
+<td style="text-align:center">迷途的二人与世界的全部 LOVE HEAVEN 300％</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/%E8%BF%B7%E9%80%94%E7%9A%84%E4%BA%8C%E4%BA%BA%E4%B8%8E%E4%B8%96%E7%95%8C%E7%9A%84%E5%85%A8%E9%83%A8">/game/迷途的二人与世界的全部</a></td>
+</tr>
+<tr>
+<td style="text-align:center">迷途羊的果树园(已知不支持WIN10)</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/%E8%BF%B7%E9%80%94%E7%BE%8A%E7%9A%84%E6%9E%9C%E6%A0%91%E5%9B%AD">/game/迷途羊的果树园</a></td>
+</tr>
+<tr>
+<td style="text-align:center">迷途羊的果树园(apk)</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/%E8%BF%B7%E9%80%94%E7%BE%8A%E7%9A%84%E6%9E%9C%E6%A0%91%E5%9B%AD">/game/迷途羊的果树园</a></td>
+</tr>
+<tr>
+<td style="text-align:center">MOON</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/KEY">/game/KEY</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="n">N</h2>
+<p>羽化安装方法详见网盘页面</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">游戏名</th>
+<th style="text-align:center">路径</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">NEKO-NIN exHeart(猫忍之心)</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/%E7%8C%AB%E5%BF%8D%E4%B9%8B%E5%BF%83">/game/猫忍之心</a></td>
+</tr>
+<tr>
+<td style="text-align:center">NEKO-NIN exHeart +PLUS Nachi(猫忍之心+PLUS 奈知篇)</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/%E7%8C%AB%E5%BF%8D%E4%B9%8B%E5%BF%83">/game/猫忍之心</a></td>
+</tr>
+<tr>
+<td style="text-align:center">NEKO-NIN exHeart +PLUS Saiha(猫忍之心+PLUS 彩羽篇)</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/%E7%8C%AB%E5%BF%8D%E4%B9%8B%E5%BF%83">/game/猫忍之心</a></td>
+</tr>
+<tr>
+<td style="text-align:center">NEKO-NIN exHeart 2(猫忍之心2)</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/%E7%8C%AB%E5%BF%8D%E4%B9%8B%E5%BF%83">/game/猫忍之心</a></td>
+</tr>
+<tr>
+<td style="text-align:center">NOeSIS 02羽化(apk、重置版)</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/NOeSIS%2002%E7%BE%BD%E5%8C%96">/game/NOeSIS 02羽化</a></td>
+</tr>
+<tr>
+<td style="text-align:center">女装海峡</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/%E5%A5%B3%E8%A3%85">/game/女装</a></td>
+</tr>
+<tr>
+<td style="text-align:center">女装山脉</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/%E5%A5%B3%E8%A3%85">/game/女装</a></td>
+</tr>
+<tr>
+<td style="text-align:center">女装学院（妊）</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/%E5%A5%B3%E8%A3%85">/game/女装</a></td>
+</tr>
+<tr>
+<td style="text-align:center">女装学园（孕）</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/%E5%A5%B3%E8%A3%85">/game/女装</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="o">O</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">游戏名</th>
+<th style="text-align:center">路径</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">ONE～辉く季节へ～</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/KEY">/game/KEY</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="p">P</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">游戏名</th>
+<th style="text-align:center">路径</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Petit Fleur～拂过小镇的旋律之风～</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/Petit%20Fleur">/game/Petit Fleur</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="q">Q</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">游戏名</th>
+<th style="text-align:center">路径</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">晴霁之后，定是菜花盛开的好天气(晴菜花)</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/%E6%99%B4%E8%8F%9C%E8%8A%B1">/game/晴菜花</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="r">R</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">游戏名</th>
+<th style="text-align:center">路径</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Rewrite</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/KEY/Rewrite">/game/KEY/Rewrite</a></td>
+</tr>
+<tr>
+<td style="text-align:center">Rewrite Harvest festa</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/KEY/Rewrite%20Harvest%20festa">/game/KEY/Rewrite Harvest festa</a></td>
+</tr>
+<tr>
+<td style="text-align:center">Rewrite+</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/KEY/Rewrite+">/game/KEY/Rewrite+</a></td>
+</tr>
+<tr>
+<td style="text-align:center">日在校园</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/SCHOOLDAYS">/game/SHCOOLDAYS</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="s">S</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">游戏名</th>
+<th style="text-align:center">路径</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">杀恋 ～悠久流传的恋之歌～</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/%E6%9D%80%E6%81%8B">/game/杀恋</a></td>
+</tr>
+<tr>
+<td style="text-align:center">丧服萝莉紧缚奇谭 美少女性奴隶调教</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/%E7%A7%81%E7%AB%8B%E3%81%95%E3%81%8F%E3%82%89%E3%82%93%E3%81%BC%E5%B0%8F%E5%AD%A6%E6%A0%A1/%E4%B8%A7%E6%9C%8D%E8%90%9D%E8%8E%89%E7%B4%A7%E7%BC%9A%E5%A5%87%E8%B0%AD%20%E7%BE%8E%E5%B0%91%E5%A5%B3%E6%80%A7%E5%A5%B4%E9%9A%B6%E8%B0%83%E6%95%99">/game/私立さくらんぼ小学校/丧服萝莉紧缚奇谭 美少女性奴隶调教</a></td>
+</tr>
+<tr>
+<td style="text-align:center">少女理论及其周边 -Ecole de Paris-</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/Navel/%E5%B0%91%E5%A5%B3%E7%90%86%E8%AE%BA%E5%8F%8A%E5%85%B6%E5%91%A8%E8%BE%B9%20-Ecole%20de%20Paris-">/game/Navel/少女理论及其周边 -Ecole de Paris-</a></td>
+</tr>
+<tr>
+<td style="text-align:center">少女理论及其之后的周边 -Belle Epoque-</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/Navel/%E5%B0%91%E5%A5%B3%E7%90%86%E8%AE%BA%E5%8F%8A%E5%85%B6%E4%B9%8B%E5%90%8E%E7%9A%84%E5%91%A8%E8%BE%B9%20-Belle%20Epoque-">/game/Navel/少女理论及其之后的周边 -Belle Epoque-</a></td>
+</tr>
+<tr>
+<td style="text-align:center">少女领域</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/%E5%B0%91%E5%A5%B3%E9%A2%86%E5%9F%9F">/game/少女领域</a></td>
+</tr>
+<tr>
+<td style="text-align:center">少女与野兽</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/minori/%E5%B0%91%E5%A5%B3%E4%B8%8E%E9%87%8E%E5%85%BD">/game/minori/少女与野兽</a></td>
+</tr>
+<tr>
+<td style="text-align:center">生命的备件</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/%E7%94%9F%E5%91%BD%E7%9A%84%E5%A4%87%E4%BB%B6">/game/生命的备件</a></td>
+</tr>
+<tr>
+<td style="text-align:center">实妹相伴的大泉君</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/%E5%AE%9E%E5%A6%B9%E7%9B%B8%E4%BC%B4%E7%9A%84%E5%A4%A7%E6%B3%89%E5%90%9B">/game/实妹相伴的大泉君</a></td>
+</tr>
+<tr>
+<td style="text-align:center">世界上最NG的恋爱</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/%E4%B8%96%E7%95%8C%E4%B8%8A%E6%9C%80NG%E7%9A%84%E6%81%8B%E7%88%B1">/game/世界上最NG的恋爱</a></td>
+</tr>
+<tr>
+<td style="text-align:center">书淫，或是已失去的梦之物语</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/%E6%B7%B1%E6%B3%BD%E4%B8%B0%E4%B8%89%E9%83%A8%E6%9B%B2">/game/深泽丰三部曲</a></td>
+</tr>
+<tr>
+<td style="text-align:center">双子洛丽塔后宫</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/LOLI/%E5%8F%8C%E5%AD%90%E6%B4%9B%E4%B8%BD%E5%A1%94%E5%90%8E%E5%AE%AB">/game/LOLI/双子洛丽塔后宫</a></td>
+</tr>
+<tr>
+<td style="text-align:center">水仙(全3部)</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/%E6%B0%B4%E4%BB%99">/game/水仙</a></td>
+</tr>
+<tr>
+<td style="text-align:center">四叶草</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/LOLI/%E5%9B%9B%E5%8F%B6%E8%8D%89">/game/LOLI/四叶草</a></td>
+</tr>
+<tr>
+<td style="text-align:center">雫～しずく～(1996初版&amp;2009重制版)</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/leaf">/game/leaf)</a></td>
+</tr>
+<tr>
+<td style="text-align:center">すぴぱら(SPPL) STORY ＃01 – Spring Has Come!</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/minori/SPPL">/game/minori/SPPL</a></td>
+</tr>
+<tr>
+<td style="text-align:center">Summer Pockets</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/KEY/Summer%20Pockets">/game/KEY/Summer Pockets</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="t">T</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">游戏名</th>
+<th style="text-align:center">路径</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">天使的日曜日</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/minori/%E5%A4%A9%E4%BD%BF%E3%81%AE%E6%97%A5%E6%9B%9C%E6%97%A5">/game/minori/天使の日曜日</a></td>
+</tr>
+<tr>
+<td style="text-align:center">糖调!(しゆがてん!)</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/%E7%B3%96%E8%B0%83!">/game/糖调!</a></td>
+</tr>
+<tr>
+<td style="text-align:center">同居恋人洛丽塔</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/LOLI/%E5%90%8C%E5%B1%85%E6%81%8B%E4%BA%BA%E6%B4%9B%E4%B8%BD%E5%A1%94">/game/LOLI/同居恋人洛丽塔</a></td>
+</tr>
+<tr>
+<td style="text-align:center">Trinoline</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/minori/Trinoline">/game/minori/Trinoline</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="u">U</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">游戏名</th>
+<th style="text-align:center">路径</th>
+</tr>
+</thead>
+</table>
+<h2 id="v">V</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">游戏名</th>
+<th style="text-align:center">路径</th>
+</tr>
+</thead>
+</table>
+<h2 id="w">W</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">游戏名</th>
+<th style="text-align:center">路径</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">忘却之物与遗落之物</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/%E6%B7%B1%E6%B3%BD%E4%B8%B0%E4%B8%89%E9%83%A8%E6%9B%B2">/game/深泽丰三部曲</a></td>
+</tr>
+<tr>
+<td style="text-align:center">Wind -a breath of heart-</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/minori/Wind%20-a%20breath%20of%20heart-">/game/minori/Wind -a breath of heart-</a></td>
+</tr>
+<tr>
+<td style="text-align:center">WHITE ALBUM(白色相簿)</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/WHITE%20ALBUM">/game/WHITE ALBUM</a></td>
+</tr>
+<tr>
+<td style="text-align:center">WHITE ALBUM2(白色相簿2)</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/WHITE%20ALBUM2">/game/WHITE ALBUM2</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="x">X</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">游戏名</th>
+<th style="text-align:center">路径</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">夏空的英仙座(ons)</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/minori/%E5%A4%8F%E7%A9%BA%E7%9A%84%E8%8B%B1%E4%BB%99%E5%BA%A7ons">/game/minori/夏空的英仙座ons</a></td>
+</tr>
+<tr>
+<td style="text-align:center">星恋＊twinkle</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/%E6%98%9F%E6%81%8B%EF%BC%8Atwinkle">/game/星恋＊twinkle</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="y">Y</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">游戏名</th>
+<th style="text-align:center">路径</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">永不落幕的前奏诗</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/minori/%E6%B0%B8%E4%B8%8D%E8%90%BD%E5%B9%95%E7%9A%84%E5%89%8D%E5%A5%8F%E8%AF%97">/game/minori/永不落幕的前奏诗</a></td>
+</tr>
+<tr>
+<td style="text-align:center">雨恋</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/%E9%9B%A8%E6%81%8B">/game/雨恋</a></td>
+</tr>
+<tr>
+<td style="text-align:center">与小萝莉相思相爱</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/LOLI/%E4%B8%8E%E5%B0%8F%E8%90%9D%E8%8E%89%E7%9B%B8%E6%80%9D%E7%9B%B8%E7%88%B1">/game/LOLI/与小萝莉相思相爱</a></td>
+</tr>
+<tr>
+<td style="text-align:center">与小萝莉相思相爱的生活</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/LOLI/%E4%B8%8E%E5%B0%8F%E8%90%9D%E8%8E%89%E7%9B%B8%E6%80%9D%E7%9B%B8%E7%88%B1%E7%9A%84%E7%94%9F%E6%B4%BB">/game/LOLI/与小萝莉相思相爱的生活</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="z">Z</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">游戏名</th>
+<th style="text-align:center">路径</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">自闭妹妹的重生调教</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/%E8%87%AA%E9%97%AD%E5%A6%B9%E5%A6%B9%E7%9A%84%E9%87%8D%E7%94%9F%E8%B0%83%E6%95%99">/game/自闭妹妹的重生调教</a></td>
+</tr>
+<tr>
+<td style="text-align:center">罪之光Rendezvous</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/minori/%E7%BD%AA%E4%B9%8B%E5%85%89Rendezvous">/game/minori/罪之光Rendezvous</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="other">Other</h2>
+<p>9-nine均由樱空汉化</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">游戏名</th>
+<th style="text-align:center">路径</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">120日元</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/120%E6%97%A5%E5%85%83">/game/120日元</a></td>
+</tr>
+<tr>
+<td style="text-align:center">12月的EVE/无尽的平安夜</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/minori/12%E6%9C%88%E7%9A%84EVE">/game/minori/12月的EVE</a></td>
+</tr>
+<tr>
+<td style="text-align:center">2nd love</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/%E6%B7%B1%E6%B3%BD%E4%B8%B0%E4%B8%89%E9%83%A8%E6%9B%B2">/game/深泽丰三部曲</a></td>
+</tr>
+<tr>
+<td style="text-align:center">3days</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/3days">/game/3days</a></td>
+</tr>
+<tr>
+<td style="text-align:center">428被封锁的涩谷</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/PSP%20ISO/428%E8%A2%AB%E5%B0%81%E9%94%81%E7%9A%84%E6%B6%A9%E8%B0%B7">/game/PSP ISO/428被封锁的涩谷</a></td>
+</tr>
+<tr>
+<td style="text-align:center">9-nine-九月九日九重色</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/9%20-%20nine/9-nine-%E4%B9%9D%E6%9C%88%E4%B9%9D%E6%97%A5%E4%B9%9D%E9%87%8D%E8%89%B2">/game/9 - nine/9-nine-九月九日九重色</a></td>
+</tr>
+<tr>
+<td style="text-align:center">9-nine-天色天歌天籁音</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/9%20-%20nine">/game/9 - nine</a></td>
+</tr>
+<tr>
+<td style="text-align:center">9-nine-春色春恋春熙风</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/9%20-%20nine">/game/9 - nine</a></td>
+</tr>
+<tr>
+<td style="text-align:center">9-nine-雪色雪花雪余痕</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/9%20-%20nine">/game/9 - nine</a></td>
+</tr>
+<tr>
+<td style="text-align:center">9-nine-NewEpisode</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/9%20-%20nine">/game/9 - nine</a></td>
+</tr>
+<tr>
+<td style="text-align:center">《终末之际》</td>
+<td style="text-align:center"><a href="https://pan.sjh0020.workers.dev/?path=/game/%E7%BB%88%E6%9C%AB%E4%B9%8B%E9%99%85">/game/终末之际</a></td>
+</tr>
+</tbody>
+</table>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[基于Gridea + GitHub Pages搭建静态博客]]></title>
+        <id>https://sjh0020.netlify.app/post/gridea-shi-yong-bi-keng/</id>
+        <link href="https://sjh0020.netlify.app/post/gridea-shi-yong-bi-keng/">
+        </link>
+        <updated>2021-09-16T03:43:52.000Z</updated>
+        <content type="html"><![CDATA[<p>也就是我的建站过程了<br>
+另：求求官方增加GitHub的ssh通讯了</p>
+<h1 id="写在开头">写在开头</h1>
+<p>Gridea还很年轻，目前才0.9.2，有<a href="https://gridea.dev/gridea-start/">官方文档</a>，文档尾部附有b站视频，可以先看看官方教程再看这里，本文档适合新手及爱折腾的人。<br>
+全文的Branch(分支名)，remote(远程仓库名)，都可自行命名，但是记得要前后一致！！</p>
+<h1 id="前提">前提</h1>
+<p>拥有GitHub账号。点此<a href="https:github.com/signup">注册</a>，以有账号请直接<a href="https://github.com">登录</a>。请新人注册GitHub账号名称正式点，这很可能成为你的网站域名，除非你额外花钱买域名托管你的GitHub Pages。</p>
+<h1 id="要下载的软件">要下载的软件</h1>
+<p>Gridea <a href="https://github.com/getgridea/gridea/releases/latest"><code>github下载地址</code></a>  、<a href="https://gitee.com/fehey/gridea/releases"><code>国内 Gitee 下载地址</code></a>，选择对应你的电脑系统安装即可。</p>
+<p>git <a href="https://git-scm.com/download/win"><code>Windows下载</code></a>  、<a href="https://git-scm.com/download/linux"><code>Linux/Unix下载</code></a>  、<a href="https://git-scm.com/download/mac"><code>Mac下载</code></a><br>
+git在0.9.2成为非必须，但是建议安装，因为现在推送你的文件到GitHub仍是通过https，而GitHub的连接很不稳定，建议通过git，通过ssh直接推送(不受墙的影响)，如果是程序员那早晚会用到的。<br>
+git的命令行版可能对新手不友好，但是命令也不会很多用到，实在不行就试试用图形界面的<a href="https://www.gitkraken.com/download">Gitkraken</a>，或者直接在浏览器上传文件吧</p>
+<p>建议下载翻墙软件，GitHub的软件有很多不错的，而且对你能登上GitHub注册账号也很重要，如<a href="https://github.com/getlantern/download">Lantern</a>，虽然是在GitHub上但应该能连上</p>
+<h1 id="github-pages设置">GitHub Pages设置</h1>
+<h2 id="github-pages分类">Github Pages分类</h2>
+<figure data-type="image" tabindex="1"><img src="https://cdn.jsdelivr.net/gh/sjh0020/picture@master/20210917/pages.6tzv9poksbo0.png" alt="pages分类" loading="lazy"></figure>
+<h2 id="创建新仓库">创建新仓库</h2>
+<p>点击GitHub主页左上方的新建一个仓库，迷路的👉<a href="https://github.com/new">New</a><br>
+<img src="https://cdn.jsdelivr.net/gh/sjh0020/picture@master/20210917/new.7im55gu7xbk0.png" alt="new" loading="lazy"><br>
+仓库名称为<code>用户名.github.io</code>。此处用户名即为GitHub用户名这是规定(个人/企业项目)使用GitHub Pages的仓库名称，因为我已经创建过所以报错，下面选项随意，可不选<br>
+<img src="https://cdn.jsdelivr.net/gh/sjh0020/picture@master/20210917/%E4%BB%93%E5%BA%93%E5%90%8D.33fftpy4taw0.png" alt="仓库名" loading="lazy"></p>
+<h2 id="在仓库设置勾选github-pages">在仓库设置勾选GitHub Pages</h2>
+<p>应该是默认设置好了的，不放心的可以去看看设置，见图，记得要做图2的第二步！！！这是设置要从哪里作为你的主页读取文件位置，之后上传一定要记得按照你的设置来<br>
+<img src="https://cdn.jsdelivr.net/gh/sjh0020/picture@master/20210917/pages.2s24hnl2eo60.png" alt="page" loading="lazy"></p>
+<h2 id="配置gridea密钥">配置Gridea密钥</h2>
+<p>点击GitHub页面右上角头像找到settings，在靠左边位置找到Developer settings，再选择Personal access tokens。<a href="https://github.com/settings/tokens">迷路点此</a>👈<br>
+在此设置页找到<a href="https://github.com/settings/tokens/new">Generate new token</a><br>
+这里的note是密钥名称，随意起，前提你知道这个密钥是给谁用的，过期时间可以选永久，但GitHub并不建议，所以要记得续一下这个密钥(如果有天gridea远程连接失败就检查一下吧)，下面勾上<code>repo</code>允许访问你的仓库即可，创建按钮在页面末尾处，成功创建后会有一串密钥，请及时复制保存,<code>只显示一次！！！</code><br>
+<img src="https://cdn.jsdelivr.net/gh/sjh0020/picture@master/20210917/token.6tn9jpstvks0.png" alt="token" loading="lazy"></p>
+<h2 id="托管你的域名可选">托管你的域名(可选)</h2>
+<p>如果你有钱，想让多点人看到你的博客，记住你的地址，可以选择买个顶级域名，然后托管这个二级域名，由于我不想花钱买域名，就不 做演示，自行百度GitHub Pages自定义域名或参考<a href="https://segmentfault.com/a/1190000003946969">单个GitHub帐号下添加多个GitHub Pages</a></p>
+<h2 id="配置gridea">配置Gridea</h2>
+<p>找到远程这一选项，这里建议域名为<code>用户名.github.io</code>，仓库为<code>用户名.github.io</code>，分支自行选择之前定义的分支，不懂直接写master，用户名，邮箱如实填写，令牌即刚刚复制的密钥，如果要参考我下图的设置请看<a href="#%E6%83%B3%E6%8A%98%E8%85%BE%E7%9A%84%E7%BB%A7%E7%BB%AD%E7%9C%8B">后面</a><br>
+<img src="https://cdn.jsdelivr.net/gh/sjh0020/picture@master/20210917/remote.4e8262w7x3q0.png" alt="remote" loading="lazy"><br>
+点击检测远程连接看看有无问题，但这只是一个基本检测，见<a href="https://github.com/getgridea/gridea/issues/896">issue #896</a>，点击旁边的同步，Gridea就基本设置完了。如果同步失败不要慌，如开头所说原因，这里我们直接祭出git</p>
+<h2 id="同步失败解决办法">同步失败解决办法</h2>
+<p>由于众所周知原因，官方在试行内置代理<a href="https://github.com/getgridea/gridea/issues/890">issues#890</a>，但我个人倾向使用ssh这种无需代理的方式</p>
+<h3 id="请先配置ssh连接github">请先配置ssh连接GitHub</h3>
+<p>请直接参考<a href="https://docs.github.com/cn/github/authenticating-to-github/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent">ssh配置官方文档</a>，这里只提下想自动启用ssh代理的话复制官方的代码，然后在<code>C:\User\用户名</code> 下新建文档，粘贴进去，保存退出，重命名整个文件为<code>.profile</code>或<code>.bashrc</code>，这个文件为Windows系统没有的，是在Linux中起作用的，git启动才调用。官方文档中只需要输入在行首带有$的命令，下同</p>
+<h3 id="手动上传至github">手动上传至GitHub</h3>
+<p>点击同步后Windows中Gridea会默认输出文件到C:\User\用户名\Documents\Gridea\output，也可以点击资源管理器<code>快速访问的文档/库里的文档</code>文件夹<br>
+这个在Gridea设置(设置按钮是左下角第一个)里可以变更位置，也可以看到源文件储存位置，旁边的文件夹图标是更改保存位置，这时必需重新回到远程设置配置<br>
+进入output文件夹，请打开资源管理器查看隐藏文件，会看到<code>.git</code>这个文件夹，直接删掉<br>
+右键选择Git Bash here，初次使用请配置git，更多请参阅<a href="https://git-scm.com/book/zh/v2">git中文说明文档</a><br>
+<img src="https://cdn.jsdelivr.net/gh/sjh0020/picture@master/20210917/git_config.6vvm0y1sx500.png" alt="git_config" loading="lazy"></p>
+<pre><code class="language-bash">$ git init
+$ git add -A # 添加目录下所有文件到待提交
+$ git commit -m&quot;creat my blog&quot;  # 引号里为提交信息(必填！不能用空格代替！)
+# 也可以只写git commit，会打开安装时选择的默认编辑器打开输入提交信息
+$ git branch -M master # 创建master分支，有需要自行替换
+$ git remote add origin git@github.com:name/name.github.io.git #把name替换为GitHub用户名
+# 这里的origin可以自定义为别的名字，只要确认以后记得
+$ git push origin master
+</code></pre>
+<h4 id="更新博客">更新博客</h4>
+<p>同样先在Gridea点击同步，不用管提示同步失败，然后找到output文件夹执行以下命令：</p>
+<pre><code class="language-bash">$ git add -A
+$ git commit -m&quot;update blog&quot;
+$ git push origin master
+</code></pre>
+<p>不想用Git的请手动上传output文件夹内除<code>.git</code>文件夹的所有内容，期间最好开启代理<br>
+<img src="https://cdn.jsdelivr.net/gh/sjh0020/picture@master/20210917/addfile.b6mvgcsl4tc.png" alt="addfile" loading="lazy"></p>
+<p>使用Gitkraken的可以参考视频，Gitkraken会直接安装在用户文件夹中，安装过程无选项，在开始菜单有快捷方式，也可以手动找<code>C:\User\用户名\AppData\Local\gitkraken</code>，打开<code>update.exe</code>即可。虽然有图形界面很好，但问题是我感觉不如我输命令直接点，请自行摸索</p>
+<div class="tvcontainer">
+<iframe class="tv" src="//player.bilibili.com/player.html?aid=711226636&bvid=BV1KD4y1S7FL&cid=206667600&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+</div>
+<h2 id="确认是否已经成功">确认是否已经成功</h2>
+<p>稍微等待一会，然后在浏览器输入https://name.github.io，请把name换成GitHub用户名，刷新出网页就是成功了</p>
+<h2 id="想折腾的继续看">想折腾的继续看</h2>
+<p>如果想把个人项目主页设成简介页，导航页之类的继续往下看。以下以blog举例，可参考自行替换名字<br>
+建议不要直接在output文件夹操作，容易报错，复制多一份虽然繁琐但是有效。顺便一提把output内<code>.git</code>删除就会提示同步成功，但是并不会更改你的GitHub上仓库内容。</p>
+<h3 id="方法1">方法1</h3>
+<p>可以直接在这个仓库下面新建文件夹，会自动指向主页下的子域名，比如我在仓库下建了blog文件夹，那对应域名即为https://sjh0020.github.io/blog，同时要记得更改Gridea远程设置，只用改域名，这个和文章跳转相关，一定要改！不然网页不能正常加载！！还要确认一下标签是否跳转正常，不确定的全部在标签开头加上<code>/blog</code>即为主域名下的blog文件夹，要导航到主页面的只用填<code>/</code>即可<br>
+<img src="https://cdn.jsdelivr.net/gh/sjh0020/picture@master/20210917/jumptag.1kvvc2o4mrb4.png" alt="jumptag" loading="lazy"></p>
+<h4 id="用git推送">用git推送</h4>
+<p>这种方法会稍微麻烦点，建议在C盘外找个地方用git克隆你的仓库或直接把output文件夹内容拷贝都一个地方，然后在拷贝后目录下新建一个<code>blog</code>文件夹或者你想要的子域名，把目录下除<code>.git</code>所有文件拖如<code>blog</code>文件夹，在有<code>.git</code>的目录中右键出git，执行：</p>
+<pre><code class="language-bash">$ git clone git@github.com:sjh0020/sjh0020.github.io.git 
+#克隆命令，自动在git当前工作目录生成`sjh0020.github.io`文件夹
+#如果用该命令克隆仓库，默认的origin就是使用ssh的
+# 如果是 git clone https://github.com/sjh0020/sjh0020.github.io
+# 那这里的origin为https，而不是ssh的方式，要重新新建一个remote
+$ git add -A
+$ git commit -m&quot;move to blog&quot;
+$ git push origin master
+</code></pre>
+<p>如果一开始就想用blog而没有经过<a href="#%E6%89%8B%E5%8A%A8%E4%B8%8A%E4%BC%A0%E8%87%B3github">之前的提交到GitHub</a><br>
+那请找个不需要管理员权限的目录新建文件夹，再次在该新建文件夹中新建<code>blog</code>文件夹，在该新建文件夹打开git，执行<a href="#%E6%89%8B%E5%8A%A8%E4%B8%8A%E4%BC%A0%E8%87%B3github">提交到GitHub</a>的命令</p>
+<p>请记住要更新博客请先把output文件夹内容复制到<code>blog</code>文件夹内然后在blog的上级目录(即有<code>.git</code>文件夹的目录)执行上一步的命令</p>
+<h3 id="方法2">方法2</h3>
+<p>新建一个仓库，然后在仓库设置打开pages，就与直接在sjh0020.github.io仓库内建blog一样效果，<br>
+但是可以把提交的历史单独出来，而不会记录到sjh0020.github.io的提交历史中，方便管理<br>
+Gridea的远程配置如之前的图<br>
+<img src="https://cdn.jsdelivr.net/gh/sjh0020/picture@master/20210917/remote.4e8262w7x3q0.png" alt="remote" loading="lazy"></p>
+<p>把output文件夹内容除<code>.git</code>复制到非管理员权限的空文件夹，在文件夹中右键打开Git，执行：</p>
+<pre><code class="language-bash">$ git init
+$ git add -A
+$ git commit -m&quot;creat blog files&quot;
+$ git branch -M master
+$ git remote add origin git@github.com:sjh0020/blog.git
+$ git push origin master
+</code></pre>
+<p>更新博客请先Gridea点击同步后打开output，复制到备份文件夹后在Git执行<a href="#%E6%9B%B4%E6%96%B0%E5%8D%9A%E5%AE%A2">更新命令</a></p>
+<h2 id="faq">FAQ</h2>
+<p><a href="https://gridea.dev/faq/">官方FAQ</a></p>
+<h2 id="图床">图床</h2>
+<p><a href="https://sm.ms">SM.MS</a><br>
+<a href="https://picx.xpoet.cn/">PicX</a>，<a href="https://github.com/XPoet/picx">项目地址</a></p>
+<h2 id="文档参考">文档参考</h2>
+<p><a href="https://gridea.dev/gridea-start/">Gridea官方快速入门</a><br>
+<a href="https://gridea.dev/faq/">Gridea官方FAQ</a><br>
+<a href="https://ericam.top/post/ji-yu-grideagithubcoding-da-jian-ge-ren-jing-tai-bo-ke/">基于Gridea+github/coding搭建静态博客</a><br>
+<a href="https://docs.github.com/cn/github/authenticating-to-github/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent">ssh配置官方文档</a><br>
+<a href="https://git-scm.com/book/zh/v2">git中文说明文档</a><br>
+<a href="https://github.com/getgridea/gridea/issues/896">issue #896</a><br>
+<a href="https://github.com/getgridea/gridea/issues/890">issues#890</a></p>
+]]></content>
+    </entry>
+</feed>
